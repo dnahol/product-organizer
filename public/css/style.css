@@ -1,4 +1,10 @@
 /* unvisited link */
+
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #003;
+}
 a {
   color: #42EEEE;
 }

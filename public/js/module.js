@@ -36,7 +36,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
       person:
       function(People, $stateParams) {
         console.log('$stateParams in detail: ', $stateParams);
-       return People.getById($stateParams.id);
+        var res = People.getById($stateParams.id);
+        console.log('getById', res );
+       return res;
       }
     }
   })

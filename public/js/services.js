@@ -68,7 +68,10 @@ this.getByPage = num => {
 this.getById = id => {
 
   return $q(function(resolve, reject) {
-    var person = people.filter(function(v){ return v.id === 'c838bd4c-ad76-4da6-b7db-e82c656e4be8'; })[0];
+    var person = {}
+    console.log('id in service :', id);
+    person = people.filter(function(v){ return v.id === id; })[0];
+    console.log('person in service', person);
 
       if (person) {
         resolve(person);

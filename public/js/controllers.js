@@ -18,13 +18,13 @@ app.controller('listCtrl', function($scope, $stateParams, $state, pageObj, Peopl
   $scope.page = pageObj;
 
 
-  $scope.goToDetail = person => {
-    var id = person.id;
-    $scope.status = 'Getting your product details! One moment!'
-    $state.go('detail', {
-      id: id
-    });
-  }
+  // $scope.goToDetail = person => {
+  //   var id = person.id;
+  //   $scope.status = 'Getting your product details! One moment!'
+  //   $state.go('detail', {
+  //     id: id
+  //   });
+  // }
 });
 
 

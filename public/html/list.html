@@ -2,7 +2,7 @@
 <h4>Click on Name for Product Details</h4>
 <p>Page {{num}}</p>
 <ul>
-  <li ng-repeat='person in page' ng-click='goToDetail(person)'>
+  <li ng-repeat='person in page' ui-sref='detail({ id: person.id })'>
     <a>Name: {{person.name}}</a>
   </li>
 </ul>
