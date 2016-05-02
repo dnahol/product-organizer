@@ -1,0 +1,25 @@
+/* unvisited link */
+a {
+  color: #42EEEE;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FFDD00;
+}
+
+/* selected link */
+a:active {
+  color: orange;
+}
+
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+    text-align: center;
+}
