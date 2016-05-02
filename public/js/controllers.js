@@ -43,19 +43,25 @@ app.controller('homeCtrl', function($scope) {
 
 app.controller('aboutCtrl', function($scope, $state, SweetAlert) {
   console.log('aboutCtrl!');
+  //  Show information like how many products there are, and their total value. Also show that kind of information for each category.
+
 
   $scope.showAlert = () => {
     SweetAlert.swal({
       title: "Are you sure?",
-      text: "You want to leave this page and go to the SWAPI page?",
+      text: "You want to leave this page and go to Producs List?",
       type: "warning",
       showCancelButton: true,
       confirmButtonColor: "#DD6B55",
-      confirmButtonText: "Yes, go to SWAPI!",
+      confirmButtonText: "Yes, go to Products List!",
       closeOnConfirm: true
     }, function(isConfirm) {
       if(isConfirm) {
-        window.location.href = 'http://swapi.co/';
+        // window.location.href = 'http://swapi.co/';
+          $state.go('list', {
+            
+          });
+
       };
     });
   };
